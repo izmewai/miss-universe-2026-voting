@@ -1,1 +1,447 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MISS UNIVERSE 2026 | FAN'S FAVOURITE VOTING</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #08080d;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 14px 40px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* ANNOUNCEMENT */
+
+.announcement {
+    background: linear-gradient(135deg, #25152d, #11101b);
+    border: 1px solid #bd9a55;
+    border-radius: 12px;
+    padding: 17px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.announcement h3 {
+    color: #e7c47c;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 9px;
+}
+
+.announcement p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    padding: 15px 5px 28px;
+}
+
+.header .year {
+    color: #d8b66e;
+    font-size: 14px;
+    letter-spacing: 6px;
+    margin-bottom: 13px;
+}
+
+.header h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(27px, 7vw, 43px);
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.header h2 {
+    color: #e4c17a;
+    font-size: clamp(17px, 4.5vw, 23px);
+    letter-spacing: 2px;
+    margin-top: 9px;
+}
+
+.header .line {
+    width: 90px;
+    height: 2px;
+    background: #d6b36c;
+    margin: 19px auto 0;
+}
+
+/* LEADERBOARD */
+
+.section-title {
+    text-align: center;
+    color: #d9b875;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+/* FIRST PLACE */
+
+.first-place {
+    background: linear-gradient(145deg, #29202a, #111018);
+    border: 2px solid #d8b66e;
+    border-radius: 17px;
+    padding: 18px;
+    margin-bottom: 23px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(216,182,110,0.13);
+}
+
+.first-place .rank {
+    color: #e8c77e;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    margin-bottom: 13px;
+}
+
+.first-place img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    background: #25232b;
+}
+
+.first-place .name {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 17px;
+    letter-spacing: 1px;
+}
+
+.first-place .country {
+    color: #e5c47e;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 9px;
+}
+
+/* OTHER CONTESTANTS */
+
+.contestant {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #15141c;
+    border: 1px solid #34303a;
+    border-radius: 13px;
+    padding: 12px;
+    margin-bottom: 13px;
+    min-height: 125px;
+}
+
+.contestant .rank {
+    color: #d9b875;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: bold;
+    width: 38px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.contestant img {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 9px;
+    background: #25232b;
+    flex-shrink: 0;
+}
+
+.contestant-info {
+    min-width: 0;
+}
+
+.contestant-info .name {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+}
+
+.contestant-info .country {
+    color: #d9b875;
+    font-size: 13px;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+
+/* BOTTOM CTA */
+
+.footer {
+    text-align: center;
+    margin-top: 35px;
+    padding: 27px 15px;
+    background: linear-gradient(145deg, #261a2b, #111018);
+    border: 1px solid #b99655;
+    border-radius: 15px;
+}
+
+.footer h2 {
+    color: #e8c77e;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 13px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.tiktok-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #08080d;
+    background: linear-gradient(135deg, #e9ce8c, #c49a50);
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.tiktok-link:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 18px rgba(231,196,124,0.4);
+}
+
+.footer .account {
+    color: #e8c77e;
+    margin-top: 16px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.copyright {
+    text-align: center;
+    color: #77717c;
+    font-size: 11px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+
+/* MOBILE */
+
+@media (max-width: 380px) {
+    .contestant {
+        gap: 10px;
+        padding: 9px;
+    }
+
+    .contestant img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .contestant .rank {
+        width: 28px;
+        font-size: 23px;
+    }
+
+    .contestant-info .name {
+        font-size: 14px;
+    }
+
+    .contestant-info .country {
+        font-size: 11px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- DAILY ANNOUNCEMENT -->
+    <div class="announcement">
+        <h3>✦ DAILY ANNOUNCEMENT ✦</h3>
+        <p id="announcementText">
+            WELCOME TO MISS UNIVERSE 2026 FAN'S FAVOURITE LEADERBOARD.
+            STAY TUNED FOR DAILY UPDATES!
+        </p>
+    </div>
+
+    <!-- WEBSITE HEADER -->
+    <header class="header">
+        <div class="year">2026</div>
+        <h1>MISS UNIVERSE 2026</h1>
+        <h2>FAN'S FAVOURITE VOTING</h2>
+        <div class="line"></div>
+    </header>
+
+    <h3 class="section-title">✦ TOP CONTESTANTS ✦</h3>
+
+    <!-- RANK 1 -->
+    <section class="first-place">
+        <div class="rank">#01</div>
+        <img src="images/5e044a074ec78dce7c1205e3c112161b.jpg"
+             alt="BEA MILLAN-WINDORSKI">
+        <div class="name">BEA MILLAN-WINDORSKI</div>
+        <div class="country">🇵🇭 PHILIPPINES</div>
+    </section>
+
+    <!-- RANK 2 -->
+    <div class="contestant">
+        <div class="rank">02</div>
+        <img src="images/6c3c8e74f35b8bbd662cfde6838be3a0.jpg"
+             alt="JENNIFER BARRETO">
+        <div class="contestant-info">
+            <div class="name">JENNIFER BARRETO</div>
+            <div class="country">🇵🇷 PUERTO RICO</div>
+        </div>
+    </div>
+
+    <!-- RANK 3 -->
+    <div class="contestant">
+        <div class="rank">03</div>
+        <img src="images/Screenshot_2026-11-14-11-42-54-064_com.openai.chatgpt-edit.jpg"
+             alt="DOMINGA LOPEZ">
+        <div class="contestant-info">
+            <div class="name">DOMINGA LÓPEZ</div>
+            <div class="country">🇨🇱 CHILE</div>
+        </div>
+    </div>
+
+    <!-- RANK 4 -->
+    <div class="contestant">
+        <div class="rank">04</div>
+        <img src="images/Screenshot_2026-11-14-11-33-36-721_com.openai.chatgpt-edit.jpg"
+             alt="MAY GRACE PARRY">
+        <div class="contestant-info">
+            <div class="name">MAY GRACE PARRY</div>
+            <div class="country">🇲🇲 MYANMAR</div>
+        </div>
+    </div>
+
+    <!-- RANK 5 -->
+    <div class="contestant">
+        <div class="rank">05</div>
+        <img src="images/1a0465b1d349ec8931fe041837226e80.jpg"
+             alt="GARANCE AUTHIE">
+        <div class="contestant-info">
+            <div class="name">GARANCE AUTHIÉ</div>
+            <div class="country">🇫🇷 FRANCE</div>
+        </div>
+    </div>
+
+    <!-- RANK 6 -->
+    <div class="contestant">
+        <div class="rank">06</div>
+        <img src="images/Screenshot_2026-11-14-11-39-27-505_com.openai.chatgpt-edit.jpg"
+             alt="CLARA VEGAS GOETZ">
+        <div class="contestant-info">
+            <div class="name">CLARA VEGAS GOETZ</div>
+            <div class="country">🇻🇪 VENEZUELA</div>
+        </div>
+    </div>
+
+    <!-- RANK 7 -->
+    <div class="contestant">
+        <div class="rank">07</div>
+        <img src="images/Screenshot_2026-11-14-11-41-08-062_com.openai.chatgpt-edit.jpg"
+             alt="SUSANA LUCIA">
+        <div class="contestant-info">
+            <div class="name">SUSANA LUCÍA</div>
+            <div class="country">🇪🇸 SPAIN</div>
+        </div>
+    </div>
+
+    <!-- RANK 8 -->
+    <div class="contestant">
+        <div class="rank">08</div>
+        <img src="images/Screenshot_2026-11-14-11-42-00-998_com.openai.chatgpt-edit.jpg"
+             alt="MIA DIO">
+        <div class="contestant-info">
+            <div class="name">MÍA DIO</div>
+            <div class="country">🇨🇺 CUBA</div>
+        </div>
+    </div>
+
+    <!-- RANK 9 -->
+    <div class="contestant">
+        <div class="rank">09</div>
+        <img src="images/da17832c5cb74b2889621ac406ef7e08.jpg"
+             alt="MARIA ALEJANDRA LOPEZ">
+        <div class="contestant-info">
+            <div class="name">MARÍA ALEJANDRA LÓPEZ</div>
+            <div class="country">🇨🇴 COLOMBIA</div>
+        </div>
+    </div>
+
+    <!-- RANK 10 -->
+    <div class="contestant">
+        <div class="rank">10</div>
+        <img src="images/Screenshot_2026-11-14-11-47-16-011_com.ss.android.ugc.trill-edit.jpg"
+             alt="JASMINE BLANDFORD">
+        <div class="contestant-info">
+            <div class="name">JASMINE BLANDFORD</div>
+            <div class="country">🇳🇮 NICARAGUA</div>
+        </div>
+    </div>
+
+    <!-- RANK 11 -->
+    <div class="contestant">
+        <div class="rank">11</div>
+        <img src="images/Screenshot_2026-11-14-11-49-07-453_com.openai.chatgpt-edit.jpg"
+             alt="DALIA BUCARAM">
+        <div class="contestant-info">
+            <div class="name">DALIA BUCARAM</div>
+            <div class="country">🇪🇨 ECUADOR</div>
+        </div>
+    </div>
+
+    <!-- BOTTOM TIKTOK SECTION -->
+    <footer class="footer">
+        <h2>
+            VOTE YOUR FAVOURITE QUEEN
+            AND SHOW THE POWER NOW
+        </h2>
+
+        <p>VOTE THERE &gt;&gt; TIKTOK &gt;&gt; @JAYSON_CRYTAL</p>
+
+        <a class="tiktok-link"
+           href="https://www.tiktok.com/@Jayson_Crytal"
+           target="_blank"
+           rel="noopener noreferrer">
+            VISIT TIKTOK ACCOUNT ↗
+        </a>
+
+        <div class="account">@JAYSON_CRYTAL</div>
+    </footer>
+
+    <div class="copyright">
+        MISS UNIVERSE 2026 • FAN'S FAVOURITE
+    </div>
+
+</div>
+
+</body>
+          </html>
+  
